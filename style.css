@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Handlee&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Roboto:wght@300;400;500;700;900&family=Tillana:wght@400;500;600;700&display=swap");
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 100px 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -57,6 +57,16 @@ footer a {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+}
+.mentions__title {
+  margin: 40px 0 20px 0;
+  text-transform: uppercase;
+}
+.mentions__title--main {
+  text-align: center;
+}
+.mentions__adress p {
+  margin: 5px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
