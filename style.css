@@ -1,3 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Handlee&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Roboto:wght@300;400;500;700;900&family=Tillana:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #488c74;
+  text-align: center;
+  padding: 30px 0;
+}
+header img {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+}
 
 /*# sourceMappingURL=style.css.map */

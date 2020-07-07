@@ -2,75 +2,65 @@
 
 
 // ------------ Colors
-
 // Primary colors
 $primaryColor: rgb(72, 140, 116);
 $accentColor: rgb(250, 192, 56);
 $textColor: rgb(40, 39, 40);
-
-
 // La Note enchantée
 $noteBackgroundColor: rgb(251, 215, 211);
 $noteText: rgb(45, 14, 19);
 $noteDarkIconColor: rgb(235, 67, 78);
 $noteLightIconColor: rgb(242, 125, 87);
-$noteIconGradient: linear-gradient(90deg, rgba(235, 67, 78, 1) 0%, rgba(242, 125, 87, 1) 54%);
-
-
+$noteIconGradient: linear-gradient(90deg, $noteDarkIconColor 0%, $noteLightIconColor 54%);
 // Le Chic à la française
 $chicBackgroundColor: rgb(255, 241, 254);
 $chicOrange: rgb(184, 96, 16);
 $chicViolet: rgb(147, 80, 135);
 $chicBleu: rgb(90, 49, 192);
-$chicGradient: linear-gradient(90deg, rgba(184, 96, 16, 1) 43%, rgba(147, 80, 135, 1) 67%, rgba(90, 49, 192, 1) 100%);
-
-
+$chicGradient: linear-gradient(90deg, $chicOrange 43%, $chicViolet 67%, $chicBleu 100%);
 // Le Délice des papilles
 $deliceBackgroundColor: rgb(232, 234, 235);
 $deliceText: rgb(15, 15, 15);
 $deliceDarkBlue: rgb(1, 0, 212);
 $deliceBlue: rgb(12, 85, 239);
 $deliceLigthBlue: rgb(31, 136, 247);
-$deliceGradient: linear-gradient(90deg, rgba(1, 0, 212, 1) 57%, rgba(12, 85, 239, 1) 76%, rgba(31, 136, 247, 1) 100%);
-
-
+$deliceGradient: linear-gradient(90deg, $deliceDarkBlue 57%, $deliceBlue 76%, $deliceLigthBlue 100%);
 // La Palette du goût
 $paletteBackgroundColor: rgb(253, 255, 253);
 $paletteText: rgb(31, 32, 31);
 $paletteDarkGreen: rgb(50, 131, 44);
 $paletteLigthGreen: rgb(179, 255, 108);
-$deliceGradient: linear-gradient(90deg, rgba(50, 131, 44, 1) 49%, rgba(179, 255, 108, 1) 83%);
+$deliceGradient: linear-gradient(90deg, $paletteDarkGreen 49%, $paletteLigthGreen 83%);
 
 
 
 // -------------- Fonts
-
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Handlee&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Roboto:wght@300;400;500;700;900&family=Tillana:wght@400;500;600;700&display=swap');
-
 // Croissant One
 $croissantOne: 'Croissant One',
 cursive;
-
 // Devonshire
 $devonshire: 'Devonshire',
 cursive;
-
 // Handlee
 $handlee: 'Handlee',
 cursive;
-
 // Kalam
 $kalam: 'Kalam',
 cursive;
-
 // Kaushan Script
 $kaushanScript: 'Kaushan Script',
 cursive;
-
 // Roboto
 $roboto: 'Roboto',
 sans-serif;
-
 // Tillana
 $tillana: 'Tillana',
 cursive;
+
+// -------------- Fonts
+$x-small: 320px;
+$small: 650px;
+$medium: 1024px;
+$large: 1170px;
+$x-large: 1300px;
