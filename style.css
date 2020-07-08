@@ -53,6 +53,52 @@ footer a {
   }
 }
 
+menu {
+  background: blue;
+}
+
+.restaurant-name {
+  margin: 70px 0 50px 0;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 100px 200px 100px;
+  box-shadow: 0px 0px 20px 0px #7a7a7a47;
+}
+.menu__heading {
+  margin: 70px 0;
+  text-align: center;
+  font-size: 2rem;
+}
+.menu__course {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.menu__divider {
+  width: 30%;
+  height: auto;
+}
+.menu__dish {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+}
+
 .mentions {
   width: 80%;
   margin-right: auto;
