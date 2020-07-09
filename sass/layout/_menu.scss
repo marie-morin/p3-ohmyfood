@@ -11,6 +11,7 @@
     margin-right: auto;
     padding: 30px 5vw 15vw 5vw;
     box-shadow: 0px 0px 20px 0px #7a7a7a47;
+    text-align: center;
 
     @media screen and (min-width: $x-large) {
         width: 70%;
@@ -19,6 +20,26 @@
 
     @media screen and (max-width: 500px) {
         width: 90%;
+    }
+
+    &--note {
+        padding-bottom: 5vw;
+        font-family: $kalam;
+        font-weight: 300;
+        background: $noteBackgroundColor;
+        color: $noteText;
+    }
+
+    &--chic {
+        font-family: serif;
+        background: $chicBackgroundColor;
+    }
+
+    &--delice {
+        font-family: $kalam;
+        background: $deliceBackgroundColor;
+        font-weight: 300;
+        color: $deliceText;
     }
 
     &--palette {
@@ -30,19 +51,59 @@
 
 
 
+
     // ------------------- Colored title inside menu card
+    &__icon {
+        margin-top: 50px;
+        @include gradientText($noteIconGradient);
+        font-size: 100px;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 20px;
+            font-size: 75px;
+        }
+
+        &--end {
+            margin: 0 7px 0 0;
+            font-size: 70px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 45px;
+            }
+        }
+    }
+
     &__heading {
-        margin: 20px 0 40px 0;
+        margin-bottom: 30px;
         text-align: center;
-        font-family: $kaushanScript;
         font-size: 3vw;
 
         @media screen and (max-width: $large) {
             font-size: 35px;
         }
 
+        &--note {
+            font-family: $devonshire;
+        }
+
+        &--chic {
+            @include gradientText($chicGradient);
+            font-family: $croissantOne;
+        }
+
+        &--delice {
+            @include gradientText($deliceGradient);
+            font-family: $parisienne;
+        }
+
         &--palette {
             @include gradientText($paletteGradient);
+            font-family: $kaushanScript;
+        }
+
+        &--end {
+            margin: 0 0 0 7px;
+            font-family: $devonshire;
         }
     }
 
@@ -52,7 +113,7 @@
     // ------------------- Course type
     &__course {
         @include flexbox (space-between);
-        margin: 30px 0;
+        margin: 60px 0 20px 0;
         text-align: center;
 
 
@@ -66,6 +127,35 @@
         max-width: 400px;
         height: auto;
 
+        // ------- Divider Chic à la française
+        &--chic-first {
+            fill: $chicOrange;
+        }
+
+        &--chic-second {
+            fill: $chicViolet;
+        }
+
+        &--chic-third {
+            fill: $chicBleu;
+        }
+
+
+        // ------- Divider Delice des papilles
+        &--delice-first {
+            fill: $deliceDarkBlue;
+        }
+
+        &--delice-second {
+            fill: $deliceBlue;
+        }
+
+        &--delice-third {
+            fill: $deliceLigthBlue;
+        }
+
+
+        // ------- Divider Palette du goût
         &--palette-left {
             fill: url(#palette-gradient);
         }
@@ -78,15 +168,40 @@
     &__title {
         margin: 0;
         padding: 0 15px;
-        font-size: 1.8vw;
+        font-size: 1.2vw;
 
 
         @media screen and (max-width: $x-large) {
-            font-size: 20px;
+            font-size: 22px;
         }
 
         @media screen and (max-width: $small) {
             line-height: 22px;
+        }
+
+        // ----------------- Titre Note enchantée
+        &--note {
+            font-weight: 400;
+        }
+
+
+        // ----------------- Titre Chic à la française
+        &--chic-first {
+            color: $chicOrange;
+        }
+
+        &--chic-second {
+            color: $chicViolet;
+        }
+
+        &--chic-third {
+            color: $chicBleu;
+        }
+
+
+        // ----------------- Titre Délice des papilles
+        &--delice {
+            font-weight: 300;
         }
     }
 
@@ -110,9 +225,36 @@
             margin-bottom: 10px;
             text-align: center;
         }
+
+        &--note {
+            width: 100%;
+        }
+
+        &--chic-first {
+            color: $chicOrange;
+        }
+
+        &--chic-second {
+            color: $chicViolet;
+        }
+
+        &--chic-third {
+            color: $chicBleu;
+        }
+
+
     }
 
     &__dishname {
         margin-right: 10px;
+    }
+
+    &__bottom {
+        margin-top: 80px;
+        @include flexbox(center, row, center);
+
+        @media screen and (max-width : 500px) {
+            @include flexbox(center, column, center);
+        }
     }
 }

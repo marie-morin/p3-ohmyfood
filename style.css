@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Handlee&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Roboto:wght@300;400;500;700;900&family=Tillana:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 body {
   margin: 0;
   padding: 0 0 100px 0;
@@ -70,6 +71,7 @@ menu {
   margin-right: auto;
   padding: 30px 5vw 15vw 5vw;
   box-shadow: 0px 0px 20px 0px #7a7a7a47;
+  text-align: center;
 }
 @media screen and (min-width: 1300px) {
   .menu {
@@ -82,15 +84,53 @@ menu {
     width: 90%;
   }
 }
+.menu--note {
+  padding-bottom: 5vw;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  background: #fbd7d3;
+  color: #2d0e13;
+}
+.menu--chic {
+  font-family: serif;
+  background: #fff1fe;
+}
+.menu--delice {
+  font-family: "Kalam", cursive;
+  background: #e9ebeb;
+  font-weight: 300;
+  color: #0f0f0f;
+}
 .menu--palette {
   font-family: "Handlee", cursive;
   background: #fdfffd;
   color: #1f201f;
 }
+.menu__icon {
+  margin-top: 50px;
+  background: -webkit-linear-gradient(360deg, #eb434e 20%, #f27d57 84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+}
+@media screen and (max-width: 600px) {
+  .menu__icon {
+    margin-top: 20px;
+    font-size: 75px;
+  }
+}
+.menu__icon--end {
+  margin: 0 7px 0 0;
+  font-size: 70px;
+}
+@media screen and (max-width: 600px) {
+  .menu__icon--end {
+    font-size: 45px;
+  }
+}
 .menu__heading {
-  margin: 20px 0 40px 0;
+  margin-bottom: 30px;
   text-align: center;
-  font-family: "Kaushan Script", cursive;
   font-size: 3vw;
 }
 @media screen and (max-width: 1170px) {
@@ -98,17 +138,37 @@ menu {
     font-size: 35px;
   }
 }
+.menu__heading--note {
+  font-family: "Devonshire", cursive;
+}
+.menu__heading--chic {
+  background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive;
+}
+.menu__heading--delice {
+  background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Parisienne", cursive;
+}
 .menu__heading--palette {
   background: -webkit-linear-gradient(360deg, #32832c 30%, #b3ff6c 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+}
+.menu__heading--end {
+  margin: 0 0 0 7px;
+  font-family: "Devonshire", cursive;
 }
 .menu__course {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 30px 0;
+  margin: 60px 0 20px 0;
   text-align: center;
 }
 @media screen and (max-width: 270px) {
@@ -121,6 +181,24 @@ menu {
   max-width: 400px;
   height: auto;
 }
+.menu__divider--chic-first {
+  fill: #b86010;
+}
+.menu__divider--chic-second {
+  fill: #935087;
+}
+.menu__divider--chic-third {
+  fill: #5a31c0;
+}
+.menu__divider--delice-first {
+  fill: #0100d4;
+}
+.menu__divider--delice-second {
+  fill: #0c55ef;
+}
+.menu__divider--delice-third {
+  fill: #1f88f7;
+}
 .menu__divider--palette-left {
   fill: url(#palette-gradient);
 }
@@ -130,17 +208,32 @@ menu {
 .menu__title {
   margin: 0;
   padding: 0 15px;
-  font-size: 1.8vw;
+  font-size: 1.2vw;
 }
 @media screen and (max-width: 1300px) {
   .menu__title {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 650px) {
   .menu__title {
     line-height: 22px;
   }
+}
+.menu__title--note {
+  font-weight: 400;
+}
+.menu__title--chic-first {
+  color: #b86010;
+}
+.menu__title--chic-second {
+  color: #935087;
+}
+.menu__title--chic-third {
+  color: #5a31c0;
+}
+.menu__title--delice {
+  font-weight: 300;
 }
 .menu__dish {
   display: flex;
@@ -167,8 +260,35 @@ menu {
     text-align: center;
   }
 }
+.menu__dish--note {
+  width: 100%;
+}
+.menu__dish--chic-first {
+  color: #b86010;
+}
+.menu__dish--chic-second {
+  color: #935087;
+}
+.menu__dish--chic-third {
+  color: #5a31c0;
+}
 .menu__dishname {
   margin-right: 10px;
+}
+.menu__bottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .menu__bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .croissant {
