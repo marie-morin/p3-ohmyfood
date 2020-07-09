@@ -28,9 +28,9 @@ $deliceGradient: linear-gradient(90deg, $deliceDarkBlue 57%, $deliceBlue 76%, $d
 // La Palette du goût
 $paletteBackgroundColor: rgb(253, 255, 253);
 $paletteText: rgb(31, 32, 31);
-$paletteDarkGreen: rgb(50, 131, 44);
-$paletteLigthGreen: rgb(179, 255, 108);
-$deliceGradient: linear-gradient(90deg, $paletteDarkGreen 49%, $paletteLigthGreen 83%);
+$paletteGradient: 360deg,
+rgb(50, 131, 44) 30%,
+rgb(179, 255, 108) 70%;
 
 
 

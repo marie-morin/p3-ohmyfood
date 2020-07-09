@@ -1,6 +1,7 @@
 .restaurant-name {
-    margin: 70px 0 50px 0;
-    font-size: 2.4rem;
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -8,32 +9,110 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 100px 200px 100px;
+    padding: 30px 5vw 15vw 5vw;
     box-shadow: 0px 0px 20px 0px #7a7a7a47;
 
-    &__heading {
-        margin: 70px 0;
-        text-align: center;
-        font-size: 2rem;
+    @media screen and (min-width: $x-large) {
+        width: 70%;
+        padding: 30px 10vw 15vw 10vw;
     }
 
+    @media screen and (max-width: 500px) {
+        width: 90%;
+    }
+
+    &--palette {
+        font-family: $handlee;
+        background: $paletteBackgroundColor;
+        color: $paletteText;
+    }
+
+
+
+
+    // ------------------- Colored title inside menu card
+    &__heading {
+        margin: 20px 0 40px 0;
+        text-align: center;
+        font-family: $kaushanScript;
+        font-size: 3vw;
+
+        @media screen and (max-width: $large) {
+            font-size: 35px;
+        }
+
+        &--palette {
+            @include gradientText($paletteGradient);
+        }
+    }
+
+
+
+
+    // ------------------- Course type
     &__course {
         @include flexbox (space-between);
         margin: 30px 0;
         text-align: center;
-        font-size: 0.8rem;
+
+
+        @media screen and (max-width: 270px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__divider {
-        width: 30%;
+        width: 35%;
+        max-width: 400px;
         height: auto;
+
+        &--palette-left {
+            fill: url(#palette-gradient);
+        }
+
+        &--palette-rigth {
+            fill: url(#palette-gradient-reverse);
+        }
     }
 
+    &__title {
+        margin: 0;
+        padding: 0 15px;
+        font-size: 1.8vw;
+
+
+        @media screen and (max-width: $x-large) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $small) {
+            line-height: 22px;
+        }
+    }
+
+
+
+
+    // ------------------- Lines for each dish
     &__dish {
-        @include flexbox (space-between);
+        @include flexbox (space-between, row, flex-start);
         width: 85%;
         margin-left: auto;
         margin-right: auto;
         padding: 10px 0;
+
+        @media screen and (min-width: $x-large) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 570px) {
+            @include flexbox (center, column, center);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    &__dishname {
+        margin-right: 10px;
     }
 }
