@@ -1,4 +1,54 @@
 // Here are set all the variables regarding color, fonts, size...
+// -------------- Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Handlee&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Roboto:wght@300;400;500;700;900&family=Tillana:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
+
+
+// -------------- Breaking Points
+$x-small: 320px;
+$small: 650px;
+$medium: 1024px;
+$large: 1170px;
+$x-large: 1300px;
+
+
+
+
+// -------------- Animations
+$shake-intensity: 2%;
+
+
+
+
+// -------------- Fonts
+// Croissant One
+$croissantOne: 'Croissant One',
+cursive;
+// Devonshire
+$devonshire: 'Devonshire',
+cursive;
+// Handlee
+$handlee: 'Handlee',
+cursive;
+// Kalam
+$kalam: 'Kalam',
+cursive;
+// Kaushan Script
+$kaushanScript: 'Kaushan Script',
+cursive;
+// Roboto
+$roboto: 'Roboto',
+sans-serif;
+// Tillana
+$tillana: 'Tillana',
+cursive;
+// Parisienne
+$parisienne: 'Parisienne',
+cursive;
+
+
 
 
 // ------------ Colors
@@ -45,41 +95,3 @@ $paletteLightGreen: rgb(179, 255, 108);
 $paletteGradient: 360deg,
 $paletteDarkGreen 30%,
 $paletteLightGreen 70%;
-
-
-
-// -------------- Fonts
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Handlee&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Roboto:wght@300;400;500;700;900&family=Tillana:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-
-// Croissant One
-$croissantOne: 'Croissant One',
-cursive;
-// Devonshire
-$devonshire: 'Devonshire',
-cursive;
-// Handlee
-$handlee: 'Handlee',
-cursive;
-// Kalam
-$kalam: 'Kalam',
-cursive;
-// Kaushan Script
-$kaushanScript: 'Kaushan Script',
-cursive;
-// Roboto
-$roboto: 'Roboto',
-sans-serif;
-// Tillana
-$tillana: 'Tillana',
-cursive;
-// Parisienne
-$parisienne: 'Parisienne',
-cursive;
-
-// -------------- Fonts
-$x-small: 320px;
-$small: 650px;
-$medium: 1024px;
-$large: 1170px;
-$x-large: 1300px;

@@ -21,5 +21,9 @@ footer {
         @media screen and (max-width: $small - 100) {
             padding: 5px;
         }
+
+        &:hover {
+            animation: wiggle 150ms cubic-bezier(.4, .1, .6, .9) infinite;
+        }
     }
 }
