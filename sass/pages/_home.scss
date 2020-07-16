@@ -27,11 +27,46 @@
 // }
 
 .card {
-    background-color: lightpink;
-    border: 1px solid rgb(255, 47, 82);
+    height: 50vh;
+    @include flexbox (center, column);
+    box-shadow: 0px 0px 20px 0px #7a7a7a47;
+
 
     &__container {
-        width: 80%;
-        background-color: lightcyan;
+        width: 85%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 40px;
+        margin: 40px auto 40px auto;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+    }
+
+    &__menu {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+}
+
+.upcoming {
+    @include flexbox(center, row, flex-end);
+    padding: 10px 35px;
+    margin: 0px auto;
+
+
+    font-size: 1.6rem;
+    color: $accentColor;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 10px;
+
+    &__text,
+    &__point {
+        font-family: $roboto;
+        font-weight: 350;
     }
 }
