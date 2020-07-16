@@ -1,3 +1,144 @@
+.card {
+    height: 40vh;
+    @include flexbox (center, column);
+    padding: 10px;
+    box-shadow: 0px 0px 20px 0px #7a7a7a47;
+
+    &--note {
+        background-color: $noteBackgroundColor;
+    }
+
+    &--chic {
+        background-color: $chicBackgroundColor;
+    }
+
+    &--delice {
+        background-color: $deliceBackgroundColor;
+    }
+
+    &--palette {
+        background-color: $paletteBackgroundColor;
+    }
+
+
+    &__container {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 40px;
+        margin: 40px auto 40px auto;
+        text-align: center;
+    }
+
+    &__name {
+        margin-bottom: 8px;
+        font-size: 25px;
+
+
+        &--note {
+            font-family: $devonshire;
+        }
+
+        &--chic {
+            @include gradientText($chicGradient);
+            font-family: $croissantOne;
+            font-size: 20px;
+        }
+
+        &--delice {
+            @include gradientText($deliceGradient);
+            font-family: $parisienne;
+        }
+
+        &--palette {
+            @include gradientText($paletteGradient);
+            font-family: $kaushanScript;
+        }
+    }
+
+    &__menu {
+        margin-top: 8px;
+        font-size: 30px;
+
+        &--note {
+            color: $noteText;
+            font-family: $kalam;
+            text-transform: uppercase;
+        }
+
+        &--chic {
+            color: $chicOrange;
+            font-family: $croissantOne;
+        }
+
+        &--delice {
+            color: $deliceLigthBlue;
+            font-family: $handlee;
+        }
+
+        &--palette {
+            color: $paletteDarkGreen;
+            font-family: $handlee;
+        }
+    }
+
+    &__icon {
+        margin-bottom: 10px;
+        font-size: 30px;
+        @include gradientText($noteIconGradient);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.upcoming {
+    @include flexbox(center, row, flex-end);
+    padding: 10px 35px;
+    margin: 0px auto;
+
+
+    font-size: 1.6rem;
+    color: $accentColor;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 10px;
+
+    &__text,
+    &__point {
+        font-family: $roboto;
+        font-weight: 350;
+    }
+}
+
 // .croissant {
 //     font-family: $croissantOne;
 // }
@@ -25,48 +166,3 @@
 // .tillana {
 //     font-family: $tillana;
 // }
-
-.card {
-    height: 50vh;
-    @include flexbox (center, column);
-    box-shadow: 0px 0px 20px 0px #7a7a7a47;
-
-
-    &__container {
-        width: 85%;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 40px;
-        margin: 40px auto 40px auto;
-    }
-
-    &__name {
-        margin-bottom: 10px;
-    }
-
-    &__menu {
-        margin-top: 10px;
-        font-size: 25px;
-    }
-}
-
-.upcoming {
-    @include flexbox(center, row, flex-end);
-    padding: 10px 35px;
-    margin: 0px auto;
-
-
-    font-size: 1.6rem;
-    color: $accentColor;
-    background-color: $primaryColor;
-    border: none;
-    border-radius: 10px;
-
-    &__text,
-    &__point {
-        font-family: $roboto;
-        font-weight: 350;
-    }
-}

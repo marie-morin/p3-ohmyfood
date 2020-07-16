@@ -288,12 +288,25 @@ footer a {
 }
 
 .card {
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
   box-shadow: 0px 0px 20px 0px #7a7a7a47;
+}
+.card--note {
+  background-color: #fbd7d3;
+}
+.card--chic {
+  background-color: #fff1fe;
+}
+.card--delice {
+  background-color: #e9ebeb;
+}
+.card--palette {
+  background-color: #fdfffd;
 }
 .card__container {
   width: 85%;
@@ -302,13 +315,61 @@ footer a {
   grid-template-rows: 1fr 1fr;
   grid-gap: 40px;
   margin: 40px auto 40px auto;
+  text-align: center;
 }
 .card__name {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+.card__name--note {
+  font-family: "Devonshire", cursive;
+}
+.card__name--chic {
+  background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 20px;
+}
+.card__name--delice {
+  background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Parisienne", cursive;
+}
+.card__name--palette {
+  background: -webkit-linear-gradient(360deg, #32832c 30%, #b3ff6c 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
 }
 .card__menu {
-  margin-top: 10px;
-  font-size: 25px;
+  margin-top: 8px;
+  font-size: 30px;
+}
+.card__menu--note {
+  color: #2d0e13;
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+}
+.card__menu--chic {
+  color: #b86010;
+  font-family: "Croissant One", cursive;
+}
+.card__menu--delice {
+  color: #1f88f7;
+  font-family: "Handlee", cursive;
+}
+.card__menu--palette {
+  color: #32832c;
+  font-family: "Handlee", cursive;
+}
+.card__icon {
+  margin-bottom: 10px;
+  font-size: 30px;
+  background: -webkit-linear-gradient(360deg, #eb434e 20%, #f27d57 84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .upcoming {
