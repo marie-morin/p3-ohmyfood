@@ -1,8 +1,11 @@
 .card {
+    width: 40vw;
+    max-width: 550px;
     height: 40vh;
     @include flexbox (center, column);
     padding: 10px;
     box-shadow: 0px 0px 20px 0px #7a7a7a47;
+
 
     &--note {
         background-color: $noteBackgroundColor;
@@ -20,15 +23,42 @@
         background-color: $paletteBackgroundColor;
     }
 
+    &--left {
+        justify-self: end;
+
+        @media screen and (max-width: $small - 100) {
+            justify-self: stretch;
+        }
+    }
+
+    &--rigth {
+        justify-self: start;
+
+        @media screen and (max-width: $small - 100) {
+            justify-self: stretch;
+        }
+    }
+
+    @media screen and (max-width: $small - 100) {
+        width: 100%;
+    }
+
 
     &__container {
         width: 85%;
+        margin: 40px auto 40px auto;
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 40px;
-        margin: 40px auto 40px auto;
+
         text-align: center;
+
+        @media screen and (max-width: $small - 100) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(1fr/4);
+        }
     }
 
     &__name {
@@ -91,35 +121,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .upcoming {
     @include flexbox(center, row, flex-end);
     padding: 10px 35px;
@@ -138,31 +139,3 @@
         font-weight: 350;
     }
 }
-
-// .croissant {
-//     font-family: $croissantOne;
-// }
-
-// .devon {
-//     font-family: $devonshire;
-// }
-
-// .handlee {
-//     font-family: $handlee;
-// }
-
-// .kalam {
-//     font-family: $kalam;
-// }
-
-// .kaushan {
-//     font-family: $kaushanScript;
-// }
-
-// .roboto {
-//     font-family: $roboto;
-// }
-
-// .tillana {
-//     font-family: $tillana;
-// }

@@ -288,6 +288,8 @@ footer a {
 }
 
 .card {
+  width: 40vw;
+  max-width: 550px;
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -308,14 +310,41 @@ footer a {
 .card--palette {
   background-color: #fdfffd;
 }
+.card--left {
+  justify-self: end;
+}
+@media screen and (max-width: 550px) {
+  .card--left {
+    justify-self: stretch;
+  }
+}
+.card--rigth {
+  justify-self: start;
+}
+@media screen and (max-width: 550px) {
+  .card--rigth {
+    justify-self: stretch;
+  }
+}
+@media screen and (max-width: 550px) {
+  .card {
+    width: 100%;
+  }
+}
 .card__container {
   width: 85%;
+  margin: 40px auto 40px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 40px;
-  margin: 40px auto 40px auto;
   text-align: center;
+}
+@media screen and (max-width: 550px) {
+  .card__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr/4);
+  }
 }
 .card__name {
   margin-bottom: 8px;
