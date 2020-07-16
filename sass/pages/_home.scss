@@ -143,16 +143,31 @@
     padding: 10px 35px;
     margin: 0px auto;
 
-
     font-size: 1.6rem;
     color: $accentColor;
     background-color: $primaryColor;
     border: none;
     border-radius: 10px;
 
-    &__text,
+    &__text {
+        font-family: $roboto;
+        font-weight: 350;
+    }
+
     &__point {
         font-family: $roboto;
         font-weight: 350;
+
+        &--first {
+            animation: firstPointBlinking 2.5s infinite;
+        }
+
+        &--second {
+            animation: secondPointBlinking 2.5s infinite;
+        }
+
+        &--third {
+            animation: thirdPointBlinking 2.5s infinite;
+        }
     }
 }

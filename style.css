@@ -8,10 +8,69 @@
     transform: translateX(-2%);
   }
 }
+@keyframes firstPointBlinking {
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes secondPointBlinking {
+  0% {
+    opacity: 0;
+  }
+  21% {
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes thirdPointBlinking {
+  0% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  44% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   margin: 0;
   padding: 0 0 100px 0;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 550px) {
+  body {
+    padding-bottom: 120px;
+  }
 }
 
 * {
@@ -470,9 +529,22 @@ footer a:hover {
   border: none;
   border-radius: 10px;
 }
-.upcoming__text, .upcoming__point {
+.upcoming__text {
   font-family: "Roboto", sans-serif;
   font-weight: 350;
+}
+.upcoming__point {
+  font-family: "Roboto", sans-serif;
+  font-weight: 350;
+}
+.upcoming__point--first {
+  animation: firstPointBlinking 2.5s infinite;
+}
+.upcoming__point--second {
+  animation: secondPointBlinking 2.5s infinite;
+}
+.upcoming__point--third {
+  animation: thirdPointBlinking 2.5s infinite;
 }
 
 .mentions {

@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0 0 100px 0;
     font-family: $roboto;
+
+    @media screen and (max-width: $small - 100) {
+        padding-bottom: 120px;
+    }
 }
 
 * {

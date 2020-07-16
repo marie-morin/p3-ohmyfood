@@ -7,3 +7,73 @@
         transform: translateX($shake-intensity * -1);
     }
 }
+
+@keyframes firstPointBlinking {
+    0% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes secondPointBlinking {
+    0% {
+        opacity: 0;
+    }
+
+    21% {
+        opacity: 0;
+    }
+
+    22% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes thirdPointBlinking {
+    0% {
+        opacity: 0;
+    }
+
+    43% {
+        opacity: 0;
+    }
+
+    44% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
