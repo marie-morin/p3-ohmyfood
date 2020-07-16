@@ -1,27 +1,37 @@
-.croissant {
-    font-family: $croissantOne;
-}
+// .croissant {
+//     font-family: $croissantOne;
+// }
 
-.devon {
-    font-family: $devonshire;
-}
+// .devon {
+//     font-family: $devonshire;
+// }
 
-.handlee {
-    font-family: $handlee;
-}
+// .handlee {
+//     font-family: $handlee;
+// }
 
-.kalam {
-    font-family: $kalam;
-}
+// .kalam {
+//     font-family: $kalam;
+// }
 
-.kaushan {
-    font-family: $kaushanScript;
-}
+// .kaushan {
+//     font-family: $kaushanScript;
+// }
 
-.roboto {
-    font-family: $roboto;
-}
+// .roboto {
+//     font-family: $roboto;
+// }
 
-.tillana {
-    font-family: $tillana;
+// .tillana {
+//     font-family: $tillana;
+// }
+
+.card {
+    background-color: lightpink;
+    border: 1px solid rgb(255, 47, 82);
+
+    &__container {
+        width: 80%;
+        background-color: lightcyan;
+    }
 }

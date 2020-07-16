@@ -291,32 +291,13 @@ menu {
   }
 }
 
-.croissant {
-  font-family: "Croissant One", cursive;
+.card {
+  background-color: lightpink;
+  border: 1px solid #ff2f52;
 }
-
-.devon {
-  font-family: "Devonshire", cursive;
-}
-
-.handlee {
-  font-family: "Handlee", cursive;
-}
-
-.kalam {
-  font-family: "Kalam", cursive;
-}
-
-.kaushan {
-  font-family: "Kaushan Script", cursive;
-}
-
-.roboto {
-  font-family: "Roboto", sans-serif;
-}
-
-.tillana {
-  font-family: "Tillana", cursive;
+.card__container {
+  width: 80%;
+  background-color: lightcyan;
 }
 
 .mentions {
