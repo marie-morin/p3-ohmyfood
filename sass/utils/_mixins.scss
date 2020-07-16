@@ -10,3 +10,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@mixin cardGrowth {
+    transition: transform ease 0.6s;
+}

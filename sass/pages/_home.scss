@@ -1,12 +1,25 @@
 .card {
     width: 40vw;
     max-width: 550px;
-    height: 40vh;
+    height: 45vh;
+
+    position: relative;
     @include flexbox (center, column);
     padding: 10px;
 
     text-decoration: none;
     box-shadow: 0px 0px 20px 0px #7a7a7a47;
+    opacity: 1;
+    transition: all 0.4s ease;
+
+    &:hover {
+        opacity: 0.7;
+
+        div,
+        i {
+            transform: scale(1.1);
+        }
+    }
 
     &--note {
         background-color: $noteBackgroundColor;
@@ -65,7 +78,7 @@
     &__name {
         margin-bottom: 8px;
         font-size: 25px;
-
+        @include cardGrowth;
 
         &--note {
             color: $noteText;
@@ -92,6 +105,7 @@
     &__menu {
         margin-top: 8px;
         font-size: 30px;
+        @include cardGrowth;
 
         &--note {
             color: $noteText;
@@ -119,6 +133,7 @@
         margin-bottom: 10px;
         font-size: 30px;
         @include gradientText($noteIconGradient);
+        @include cardGrowth;
     }
 }
 
