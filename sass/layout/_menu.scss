@@ -170,6 +170,19 @@
         padding: 0 15px;
         font-size: 1.2vw;
 
+        &:after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            display: block;
+            background-color: $textColor;
+            transition: width 0.4s ease;
+            transform-origin: left;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
 
         @media screen and (max-width: $x-large) {
             font-size: 22px;
@@ -179,27 +192,46 @@
             line-height: 22px;
         }
 
-        // ----------------- Titre Note enchantée
         &--note {
             font-weight: 400;
         }
 
-
-        // ----------------- Titre Chic à la française
         &--chic-first {
             color: $chicOrange;
+
+            &::after {
+                background-color: $chicOrange;
+            }
+
+            &:hover::after {
+                background-color: $chicOrange;
+            }
         }
 
         &--chic-second {
             color: $chicViolet;
+
+            &::after {
+                background-color: $chicViolet;
+            }
+
+            &:hover::after {
+                background-color: $chicViolet;
+            }
         }
 
         &--chic-third {
             color: $chicBleu;
+
+            &::after {
+                background-color: $chicBleu;
+            }
+
+            &:hover::after {
+                background-color: $chicBleu;
+            }
         }
 
-
-        // ----------------- Titre Délice des papilles
         &--delice {
             font-weight: 300;
         }

@@ -217,6 +217,18 @@ footer a:hover {
   padding: 0 15px;
   font-size: 1.2vw;
 }
+.menu__title:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: #282728;
+  transition: width 0.4s ease;
+  transform-origin: left;
+}
+.menu__title:hover::after {
+  width: 100%;
+}
 @media screen and (max-width: 1300px) {
   .menu__title {
     font-size: 22px;
@@ -233,11 +245,29 @@ footer a:hover {
 .menu__title--chic-first {
   color: #b86010;
 }
+.menu__title--chic-first::after {
+  background-color: #b86010;
+}
+.menu__title--chic-first:hover::after {
+  background-color: #b86010;
+}
 .menu__title--chic-second {
   color: #935087;
 }
+.menu__title--chic-second::after {
+  background-color: #935087;
+}
+.menu__title--chic-second:hover::after {
+  background-color: #935087;
+}
 .menu__title--chic-third {
   color: #5a31c0;
+}
+.menu__title--chic-third::after {
+  background-color: #5a31c0;
+}
+.menu__title--chic-third:hover::after {
+  background-color: #5a31c0;
 }
 .menu__title--delice {
   font-weight: 300;
@@ -363,6 +393,7 @@ footer a:hover {
   font-size: 25px;
 }
 .card__name--note {
+  color: #2d0e13;
   font-family: "Devonshire", cursive;
 }
 .card__name--chic {
