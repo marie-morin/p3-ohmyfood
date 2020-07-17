@@ -23,7 +23,7 @@ footer {
         }
 
         &:hover {
-            animation: wiggle 150ms cubic-bezier(.4, .1, .6, .9) infinite;
+            animation: wiggle 150ms cubic-bezier(.4, .1, .6, .9) 10;
         }
     }
 }
