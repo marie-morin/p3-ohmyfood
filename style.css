@@ -111,7 +111,7 @@ footer {
 footer a {
   padding: 20px;
   font-size: 1.4rem;
-  font-weight: 350;
+  font-weight: 300;
   color: #fac038;
   text-decoration: none;
 }
@@ -531,11 +531,11 @@ footer a:hover {
 }
 .upcoming__text {
   font-family: "Roboto", sans-serif;
-  font-weight: 350;
+  font-weight: 300;
 }
 .upcoming__point {
   font-family: "Roboto", sans-serif;
-  font-weight: 350;
+  font-weight: 300;
 }
 .upcoming__point--first {
   animation: firstPointBlinking 2.5s infinite;
