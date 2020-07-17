@@ -8,7 +8,7 @@
 @mixin gradientText($gradient) {
     background: -webkit-linear-gradient($gradient);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 @mixin cardGrowth {
