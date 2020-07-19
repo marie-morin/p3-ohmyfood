@@ -15,8 +15,8 @@ footer {
         padding: 20px;
         font-size: 1.4rem;
         font-weight: 300;
-        color: $accentColor;
         text-decoration: none;
+        color: $accentColor;
 
         @media screen and (max-width: $small - 100) {
             padding: 5px;

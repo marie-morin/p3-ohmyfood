@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Handlee&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Roboto:wght@300;400;500;700;900&family=Tillana:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Handlee&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Roboto:wght@300;400;500;700;900&family=Tillana:wght@400;500;600;700&display=swap");
 @keyframes wiggle {
   25% {
     transform: translateX(2%);
@@ -112,8 +112,8 @@ footer a {
   padding: 20px;
   font-size: 1.4rem;
   font-weight: 300;
-  color: #fac038;
   text-decoration: none;
+  color: #fac038;
 }
 @media screen and (max-width: 550px) {
   footer a {
@@ -139,6 +139,35 @@ footer a:hover {
   box-shadow: 0px 0px 20px 0px #7a7a7a47;
   text-align: center;
 }
+.menu--note {
+  color: #2d0e13;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+}
+.menu--chic {
+  font-family: serif;
+}
+.menu--delice {
+  color: #0f0f0f;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+}
+.menu--palette {
+  color: #1f201f;
+  font-family: "Handlee", cursive;
+}
+.menu--note {
+  background-color: #fbd7d3;
+}
+.menu--chic {
+  background-color: #fff1fe;
+}
+.menu--delice {
+  background-color: #e9ebeb;
+}
+.menu--palette {
+  background-color: #fdfffd;
+}
 @media screen and (min-width: 1300px) {
   .menu {
     width: 70%;
@@ -149,28 +178,6 @@ footer a:hover {
   .menu {
     width: 90%;
   }
-}
-.menu--note {
-  padding-bottom: 5vw;
-  font-family: "Kalam", cursive;
-  font-weight: 300;
-  background: #fbd7d3;
-  color: #2d0e13;
-}
-.menu--chic {
-  font-family: serif;
-  background: #fff1fe;
-}
-.menu--delice {
-  font-family: "Kalam", cursive;
-  background: #e9ebeb;
-  font-weight: 300;
-  color: #0f0f0f;
-}
-.menu--palette {
-  font-family: "Handlee", cursive;
-  background: #fdfffd;
-  color: #1f201f;
 }
 .menu__icon {
   margin-top: 50px;
@@ -195,35 +202,38 @@ footer a:hover {
   }
 }
 .menu__heading {
-  margin-bottom: 30px;
+  margin: 20px 0 30px 0;
   text-align: center;
   font-size: 3vw;
+}
+.menu__heading--note {
+  font-family: "Devonshire", cursive;
+  color: #2d0e13;
+  background: -webkit-linear-gradient();
+  -webkit-background-clip: text;
+}
+.menu__heading--chic {
+  font-family: "Croissant One", cursive;
+  color: transparent;
+  background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
+  -webkit-background-clip: text;
+}
+.menu__heading--delice {
+  font-family: "Parisienne", cursive;
+  color: transparent;
+  background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
+  -webkit-background-clip: text;
+}
+.menu__heading--palette {
+  font-family: "Kaushan Script", cursive;
+  color: transparent;
+  background: -webkit-linear-gradient(360deg, #32832c 30%, #b3ff6c 70%);
+  -webkit-background-clip: text;
 }
 @media screen and (max-width: 1170px) {
   .menu__heading {
     font-size: 35px;
   }
-}
-.menu__heading--note {
-  font-family: "Devonshire", cursive;
-}
-.menu__heading--chic {
-  background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Croissant One", cursive;
-}
-.menu__heading--delice {
-  background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Parisienne", cursive;
-}
-.menu__heading--palette {
-  background: -webkit-linear-gradient(360deg, #32832c 30%, #b3ff6c 70%);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Kaushan Script", cursive;
 }
 .menu__heading--end {
   margin: 0 0 0 7px;
@@ -234,7 +244,7 @@ footer a:hover {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 60px 0 20px 0;
+  margin: 60px 0 50px 0;
   text-align: center;
 }
 @media screen and (max-width: 270px) {
@@ -391,23 +401,16 @@ footer a:hover {
   width: 40vw;
   max-width: 550px;
   height: 45vh;
+  padding: 10px;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
   text-decoration: none;
   box-shadow: 0px 0px 20px 0px #7a7a7a47;
   opacity: 1;
   transition: all 0.4s ease;
-}
-.card:hover {
-  opacity: 0.7;
-}
-.card:hover div,
-.card:hover i {
-  transform: scale(1.1);
 }
 .card--note {
   background-color: #fbd7d3;
@@ -421,26 +424,24 @@ footer a:hover {
 .card--palette {
   background-color: #fdfffd;
 }
-.card--left {
-  justify-self: end;
-}
 @media screen and (max-width: 550px) {
-  .card--left {
+  .card {
+    width: 100%;
     justify-self: stretch;
   }
+}
+.card--left {
+  justify-self: end;
 }
 .card--rigth {
   justify-self: start;
 }
-@media screen and (max-width: 550px) {
-  .card--rigth {
-    justify-self: stretch;
-  }
+.card:hover {
+  opacity: 0.7;
 }
-@media screen and (max-width: 550px) {
-  .card {
-    width: 100%;
-  }
+.card:hover div,
+.card:hover i {
+  transform: scale(1.1);
 }
 .card__container {
   width: 85%;
@@ -459,31 +460,32 @@ footer a:hover {
 }
 .card__name {
   margin-bottom: 8px;
-  font-size: 25px;
+  font-size: 30px;
   transition: transform ease 0.6s;
 }
 .card__name--note {
-  color: #2d0e13;
   font-family: "Devonshire", cursive;
+  color: #2d0e13;
+  background: -webkit-linear-gradient();
+  -webkit-background-clip: text;
 }
 .card__name--chic {
+  font-family: "Croissant One", cursive;
+  color: transparent;
   background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
   -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Croissant One", cursive;
-  font-size: 20px;
 }
 .card__name--delice {
+  font-family: "Parisienne", cursive;
+  color: transparent;
   background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
   -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Parisienne", cursive;
 }
 .card__name--palette {
+  font-family: "Kaushan Script", cursive;
+  color: transparent;
   background: -webkit-linear-gradient(360deg, #32832c 30%, #b3ff6c 70%);
   -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Kaushan Script", cursive;
 }
 .card__menu {
   margin-top: 8px;
@@ -522,8 +524,8 @@ footer a:hover {
   justify-content: center;
   flex-direction: row;
   align-items: flex-end;
-  padding: 10px 70px 10px 75px;
   margin: 0px auto;
+  padding: 10px 70px 10px 75px;
   font-size: 1.6rem;
   color: #fac038;
   background-color: #488c74;
@@ -550,8 +552,7 @@ footer a:hover {
 
 .mentions {
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .mentions__title {
   margin: 40px 0 20px 0;

@@ -1,3 +1,4 @@
+// ---------- Flexbox
 @mixin flexbox ($justify: center, $direction: row, $align: center) {
     display: flex;
     justify-content: $justify;
@@ -5,12 +6,39 @@
     align-items: $align;
 }
 
+// ---------- Animation scale des cards de la page d'accueil
+@mixin cardGrowth {
+    transition: transform ease 0.6s;
+}
+
+// ---------- Background-Color des Restaurants
+@mixin backgroudColor($backgroudColor) {
+
+    @each $restaurant,
+    $color in $backgroudColor {
+        &--#{$restaurant} {
+            background-color: $color;
+        }
+    }
+}
+
+// ---------- Linear Gradiant pour les titres et les icons
 @mixin gradientText($gradient) {
     background: -webkit-linear-gradient($gradient);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-@mixin cardGrowth {
-    transition: transform ease 0.6s;
+// ---------- Affichage des titres des restaurants
+@mixin restaurant-title-display($styles) {
+
+    @each $restaurant,
+    $style in $styles {
+        &--#{$restaurant} {
+            font-family: map-get($style, font);
+            color: map-get($style, color);
+            background: -webkit-linear-gradient(map-get($style, gradient));
+            -webkit-background-clip: text;
+        }
+    }
 }
