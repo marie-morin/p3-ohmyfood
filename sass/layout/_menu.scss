@@ -64,6 +64,19 @@
         // Boucle pour l'affichage des noms de restaurants
         @include restaurant-title-display($restaurant-title-display);
 
+        &--chic {
+            @include gradientText($chicGradient);
+        }
+
+        &--delice {
+            @include gradientText($deliceGradient);
+        }
+
+        &--palette {
+            @include gradientText($paletteGradient);
+        }
+
+
         @media screen and (max-width: $large) {
             font-size: 35px;
         }

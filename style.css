@@ -209,26 +209,33 @@ footer a:hover {
 .menu__heading--note {
   font-family: "Devonshire", cursive;
   color: #2d0e13;
-  background: -webkit-linear-gradient();
-  -webkit-background-clip: text;
 }
 .menu__heading--chic {
   font-family: "Croissant One", cursive;
   color: transparent;
-  background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
-  -webkit-background-clip: text;
 }
 .menu__heading--delice {
   font-family: "Parisienne", cursive;
   color: transparent;
-  background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
-  -webkit-background-clip: text;
 }
 .menu__heading--palette {
   font-family: "Kaushan Script", cursive;
   color: transparent;
+}
+.menu__heading--chic {
+  background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu__heading--delice {
+  background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu__heading--palette {
   background: -webkit-linear-gradient(360deg, #32832c 30%, #b3ff6c 70%);
   -webkit-background-clip: text;
+  color: transparent;
 }
 @media screen and (max-width: 1170px) {
   .menu__heading {
@@ -466,26 +473,34 @@ footer a:hover {
 .card__name--note {
   font-family: "Devonshire", cursive;
   color: #2d0e13;
-  background: -webkit-linear-gradient();
-  -webkit-background-clip: text;
 }
 .card__name--chic {
   font-family: "Croissant One", cursive;
   color: transparent;
-  background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
-  -webkit-background-clip: text;
 }
 .card__name--delice {
   font-family: "Parisienne", cursive;
   color: transparent;
-  background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
-  -webkit-background-clip: text;
 }
 .card__name--palette {
   font-family: "Kaushan Script", cursive;
   color: transparent;
+}
+.card__name--chic {
+  background: -webkit-linear-gradient(360deg, #b86010 43%, #935087 67%, #5a31c0 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+}
+.card__name--delice {
+  background: -webkit-linear-gradient(360deg, #0100d4 12%, #0c55ef 39%, #1f88f7 81%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.card__name--palette {
   background: -webkit-linear-gradient(360deg, #32832c 30%, #b3ff6c 70%);
   -webkit-background-clip: text;
+  color: transparent;
 }
 .card__menu {
   margin-top: 8px;

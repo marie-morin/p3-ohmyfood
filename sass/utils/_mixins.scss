@@ -37,8 +37,6 @@
         &--#{$restaurant} {
             font-family: map-get($style, font);
             color: map-get($style, color);
-            background: -webkit-linear-gradient(map-get($style, gradient));
-            -webkit-background-clip: text;
         }
     }
 }

@@ -63,6 +63,19 @@
 
         // Mixin pour l'affichage des titres de restaurants
         @include restaurant-title-display($restaurant-title-display);
+
+        &--chic {
+            @include gradientText($chicGradient);
+            font-size: 20px;
+        }
+
+        &--delice {
+            @include gradientText($deliceGradient);
+        }
+
+        &--palette {
+            @include gradientText($paletteGradient);
+        }
     }
 
     &__menu {
