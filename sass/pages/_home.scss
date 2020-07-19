@@ -2,15 +2,31 @@
     width: 40vw;
     max-width: 550px;
     height: 45vh;
-
+    padding: 10px;
     position: relative;
     @include flexbox (center, column);
-    padding: 10px;
 
     text-decoration: none;
     box-shadow: 0px 0px 20px 0px #7a7a7a47;
+
     opacity: 1;
     transition: all 0.4s ease;
+
+    // Mixin pour les background-color des cards
+    @include backgroudColor($backgroudColor);
+
+    @media screen and (max-width: $small - 100) {
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    &--left {
+        justify-self: end;
+    }
+
+    &--rigth {
+        justify-self: start;
+    }
 
     &:hover {
         opacity: 0.7;
@@ -21,43 +37,7 @@
         }
     }
 
-    &--note {
-        background-color: $noteBackgroundColor;
-    }
-
-    &--chic {
-        background-color: $chicBackgroundColor;
-    }
-
-    &--delice {
-        background-color: $deliceBackgroundColor;
-    }
-
-    &--palette {
-        background-color: $paletteBackgroundColor;
-    }
-
-    &--left {
-        justify-self: end;
-
-        @media screen and (max-width: $small - 100) {
-            justify-self: stretch;
-        }
-    }
-
-    &--rigth {
-        justify-self: start;
-
-        @media screen and (max-width: $small - 100) {
-            justify-self: stretch;
-        }
-    }
-
-    @media screen and (max-width: $small - 100) {
-        width: 100%;
-    }
-
-
+    // ---------- Container de la grid
     &__container {
         width: 85%;
         margin: 40px auto 40px auto;
@@ -75,31 +55,14 @@
         }
     }
 
+    // ----------- Noms des restaurants
     &__name {
         margin-bottom: 8px;
-        font-size: 25px;
+        font-size: 30px;
         @include cardGrowth;
 
-        &--note {
-            color: $noteText;
-            font-family: $devonshire;
-        }
-
-        &--chic {
-            @include gradientText($chicGradient);
-            font-family: $croissantOne;
-            font-size: 20px;
-        }
-
-        &--delice {
-            @include gradientText($deliceGradient);
-            font-family: $parisienne;
-        }
-
-        &--palette {
-            @include gradientText($paletteGradient);
-            font-family: $kaushanScript;
-        }
+        // Mixin pour l'affichage des titres de restaurants
+        @include restaurant-title-display($restaurant-title-display);
     }
 
     &__menu {
@@ -107,25 +70,14 @@
         font-size: 30px;
         @include cardGrowth;
 
-        &--note {
-            color: $noteText;
-            font-family: $kalam;
-            text-transform: uppercase;
-        }
-
-        &--chic {
-            color: $chicOrange;
-            font-family: $croissantOne;
-        }
-
-        &--delice {
-            color: $deliceLigthBlue;
-            font-family: $handlee;
-        }
-
-        &--palette {
-            color: $paletteDarkGreen;
-            font-family: $handlee;
+        // Boucle pour l'affichage des "Menu"
+        @each $restaurant,
+        $style in $menu-title-display {
+            &--#{$restaurant} {
+                color: map-get($style, color);
+                font-family: map-get($style, font);
+                text-transform: map-get($style, transform);
+            }
         }
     }
 
@@ -137,12 +89,11 @@
     }
 }
 
-
 .upcoming {
     width: 250px;
     @include flexbox(center, row, flex-end);
-    padding: 10px 70px 10px 75px;
     margin: 0px auto;
+    padding: 10px 70px 10px 75px;
 
     font-size: 1.6rem;
     color: $accentColor;

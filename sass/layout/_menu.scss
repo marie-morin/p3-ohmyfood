@@ -13,6 +13,19 @@
     box-shadow: 0px 0px 20px 0px #7a7a7a47;
     text-align: center;
 
+    // Boucle pour l'affichage de dishanme et courses
+    @each $restaurant,
+    $style in $menu-font {
+        &--#{$restaurant} {
+            color: map-get($style, color);
+            font-family: map-get($style, font);
+            font-weight: map-get($style, weight);
+        }
+    }
+
+    // Boucle pour les background-color
+    @include backgroudColor($backgroudColor);
+
     @media screen and (min-width: $x-large) {
         width: 70%;
         padding: 30px 10vw 15vw 10vw;
@@ -21,36 +34,6 @@
     @media screen and (max-width: 500px) {
         width: 90%;
     }
-
-    &--note {
-        padding-bottom: 5vw;
-        font-family: $kalam;
-        font-weight: 300;
-        background: $noteBackgroundColor;
-        color: $noteText;
-    }
-
-    &--chic {
-        font-family: serif;
-        background: $chicBackgroundColor;
-    }
-
-    &--delice {
-        font-family: $kalam;
-        background: $deliceBackgroundColor;
-        font-weight: 300;
-        color: $deliceText;
-    }
-
-    &--palette {
-        font-family: $handlee;
-        background: $paletteBackgroundColor;
-        color: $paletteText;
-    }
-
-
-
-
 
     // ------------------- Colored title inside menu card
     &__icon {
@@ -74,31 +57,15 @@
     }
 
     &__heading {
-        margin-bottom: 30px;
+        margin: 20px 0 30px 0;
         text-align: center;
         font-size: 3vw;
 
+        // Boucle pour l'affichage des noms de restaurants
+        @include restaurant-title-display($restaurant-title-display);
+
         @media screen and (max-width: $large) {
             font-size: 35px;
-        }
-
-        &--note {
-            font-family: $devonshire;
-        }
-
-        &--chic {
-            @include gradientText($chicGradient);
-            font-family: $croissantOne;
-        }
-
-        &--delice {
-            @include gradientText($deliceGradient);
-            font-family: $parisienne;
-        }
-
-        &--palette {
-            @include gradientText($paletteGradient);
-            font-family: $kaushanScript;
         }
 
         &--end {
@@ -107,13 +74,10 @@
         }
     }
 
-
-
-
     // ------------------- Course type
     &__course {
         @include flexbox (space-between);
-        margin: 60px 0 20px 0;
+        margin: 60px 0 50px 0;
         text-align: center;
 
 
@@ -140,7 +104,6 @@
             fill: $chicBleu;
         }
 
-
         // ------- Divider Delice des papilles
         &--delice-first {
             fill: $deliceDarkBlue;
@@ -153,7 +116,6 @@
         &--delice-third {
             fill: $deliceLigthBlue;
         }
-
 
         // ------- Divider Palette du goût
         &--palette-left {
@@ -237,9 +199,6 @@
         }
     }
 
-
-
-
     // ------------------- Lines for each dish
     &__dish {
         @include flexbox (space-between, row, flex-start);
@@ -273,8 +232,6 @@
         &--chic-third {
             color: $chicBleu;
         }
-
-
     }
 
     &__dishname {

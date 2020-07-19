@@ -14,10 +14,9 @@ footer {
     a {
         padding: 20px;
         font-size: 1.4rem;
-        font-weight: 400;
-        color: $accentColor;
+        font-weight: 300;
         text-decoration: none;
-        -webkit-font-smoothing: antialiased;
+        color: $accentColor;
 
         @media screen and (max-width: $small - 100) {
             padding: 5px;
