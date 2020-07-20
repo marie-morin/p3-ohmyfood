@@ -7,14 +7,10 @@ As the web developer of a online restaurant reservation start-up, I am asked to 
 
 The web site contains 6 pages  :
 
-Home
-4 menu pages
-Mentions légales
+Home - 4 menu pages - legal notice
 
 The project had to be code exclusivly in HTML and CSS, without the use of frameworks. Some CSS animaitons are requested. The page had to be fully responsive. The project was to be hosted on GitHub Pages.
 
 The project uses:
 
-HTML5
-CSS3
-SASS
+HTML5 - CSS3 - SASS
