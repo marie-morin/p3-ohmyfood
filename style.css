@@ -550,10 +550,12 @@ footer a:hover {
 .upcoming__text {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin: 0;
 }
 .upcoming__point {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin: 0;
 }
 .upcoming__point--first {
   animation: firstPointBlinking 2.5s infinite;
