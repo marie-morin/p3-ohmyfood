@@ -3,7 +3,6 @@
     max-width: 550px;
     height: 45vh;
     padding: 10px;
-    position: relative;
     @include flexbox (center, column);
 
     text-decoration: none;
@@ -31,7 +30,8 @@
     &:hover {
         opacity: 0.7;
 
-        div,
+        h2,
+        p,
         i {
             transform: scale(1.1);
         }
@@ -76,6 +76,8 @@
         &--palette {
             @include gradientText($paletteGradient);
         }
+
+
     }
 
     &__menu {
