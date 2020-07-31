@@ -386,7 +386,10 @@ footer a:hover {
   color: #5a31c0;
 }
 .menu__dishname {
-  margin-right: 10px;
+  margin: 0px 10px 0px 0px;
+}
+.menu__pricing {
+  margin: 0;
 }
 .menu__bottom {
   margin-top: 80px;
@@ -452,7 +455,7 @@ footer a:hover {
 }
 .card__container {
   width: 85%;
-  margin: 40px auto 40px auto;
+  margin: 40px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;

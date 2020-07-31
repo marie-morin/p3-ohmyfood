@@ -40,7 +40,7 @@
     // ---------- Container de la grid
     &__container {
         width: 85%;
-        margin: 40px auto 40px auto;
+        margin: 40px auto;
 
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -99,7 +99,9 @@
     &__icon {
         margin-bottom: 10px;
         font-size: 30px;
+        // Couleur Linear Gradient
         @include gradientText($noteIconGradient);
+        // Animation
         @include cardGrowth;
     }
 }

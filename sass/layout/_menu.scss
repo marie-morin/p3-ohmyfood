@@ -248,7 +248,11 @@
     }
 
     &__dishname {
-        margin-right: 10px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    &__pricing {
+        margin: 0;
     }
 
     &__bottom {
