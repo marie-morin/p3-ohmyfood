@@ -535,6 +535,12 @@ footer a:hover {
   color: transparent;
   transition: transform ease 0.6s;
 }
+@media screen and (max-height: 570px) {
+  .card__icon {
+    border: solid 4px red;
+    display: none !important;
+  }
+}
 
 .upcoming {
   width: 250px;

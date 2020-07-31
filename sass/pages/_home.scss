@@ -103,6 +103,11 @@
         @include gradientText($noteIconGradient);
         // Animation
         @include cardGrowth;
+
+        @media screen and (max-height: 570px) {
+            border: solid 4px red;
+            display: none !important;
+        }
     }
 }
 
